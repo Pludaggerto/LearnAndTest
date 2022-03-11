@@ -14,7 +14,7 @@ def evalVars(Vars):  # 定义目标函数（含约束）
     Qhat = (np.log(W) - loga) / b
     f = np.sum((Q - Qhat) ** 2)  # 计算目标函数值
 
-    CV = np.array(np.sum(1/b)**2)  # 计算违反约束程度
+    CV = np.array(np.sum(1/b)**2)  # 计算违反约束程
 
     return f, CV
 
